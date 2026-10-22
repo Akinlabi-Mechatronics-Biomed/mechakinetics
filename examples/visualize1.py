@@ -18,7 +18,7 @@ def extract_joint_positions(arm: SerialManipulator, q: list[float]) -> np.ndarra
 
 def main() -> None:
     fig = plt.figure(figsize=(13, 6))
-    fig.suptitle("MechaKinetics Day 1 — Forward Kinematics & Space Jacobian Visualizer", fontsize=14, fontweight="bold")
+    fig.suptitle("MechaKinetics — Forward Kinematics & Space Jacobian Visualizer", fontsize=14, fontweight="bold")
 
     # =========================================================================
     # Plot 1: 3-DOF Planar Arm + Workspace Cloud + Jacobian Twist Vector
