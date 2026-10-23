@@ -11,6 +11,16 @@ from mechakinetics.mobile import (
     MecanumDriveKinematics,
     integrate_odometry,
 )
+from mechakinetics.trajectory import (
+    TrajectorySample,
+    quintic_polynomial_trajectory,
+    trapezoidal_velocity_trajectory,
+)
+from mechakinetics.actuator_sizing import (
+    DrivetrainParameters,
+    SizingReport,
+    evaluate_drivetrain_sizing,
+)
 
 __version__ = "0.1.0"
 

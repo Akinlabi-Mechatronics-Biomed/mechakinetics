@@ -3,6 +3,8 @@
 **MechaKinetics** is an open-source Python engineering toolkit for robotic manipulator kinematics, omnidirectional mobile robot locomotion, smooth trajectory generation, and mechatronic actuator/drivetrain sizing.
 ![MechaKinetics Visualizer](Figure_1.png) 
 ![MechaKinetics Visualizer](Figure_2.png)
+![MechaKinetics Visualizer](Figure_3.png)
+
 ## Who It's For
 Built for mechatronics engineers, mechanical designers, and robotics developers who need a lightweight, well-tested Python library and CLI for kinematic verification, motion profiling, and motor/gearbox selection before CAD freeze or firmware deployment.
 
@@ -22,9 +24,9 @@ pytest
 ## Roadmap (Planned Work)
 - [x] Numerical Inverse Kinematics solver (Damped Least Squares / Levenberg-Marquardt with joint limit clamping)
 - [x] Holonomic & Non-Holonomic Mobile Robot Kinematics (Mecanum 4WD, Differential Drive, SE(2) odometry)
-- [ ] Point-to-point Trajectory Planners (Trapezoidal velocity & Quintic polynomial minimum-jerk profiles)
-- [ ] Mechatronic Drivetrain & Actuator Sizing module (reflected inertia matching, RMS/peak torque, gear ratio optimization)
-- [ ] Interactive CLI and Streamlit visualization dashboard
+- [x] Point-to-point Trajectory Planners (Trapezoidal velocity & Quintic polynomial minimum-jerk profiles)
+- [x] Mechatronic Drivetrain & Actuator Sizing module (reflected inertia matching, RMS/peak torque, gear ratio optimization)
+- [ ] Interactive Streamlit web dashboard, CI/CD automated testing, and v0.2.0 advanced dynamics roadmap
 
 ## License
 MIT License — see [LICENSE](LICENSE) for details.
