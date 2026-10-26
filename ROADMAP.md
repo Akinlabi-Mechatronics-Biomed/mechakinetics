@@ -9,7 +9,7 @@ This document tracks the upcoming software architecture, mathematical modeling, 
   - Extend `solve_ik_position` into `solve_ik_pose` using the full $6 \times N$ geometric Jacobian and $SO(3)$ logarithmic map / quaternion orientation error vectors.
   - Add configurable task-space weighting matrices $W_x \in \mathbb{R}^{6 \times 6}$ to balance translational vs. rotational tracking accuracy.
 - **Null-Space Posture Optimization (`Issue #2`):**
-  - For redundant manipulators ($N > 6$ or planar $N > 2$), project secondary objectives (joint-limit avoidance and manipulability maximization $\sqrt{\det(J J^T)}$) into the Jacobian null space $(I - J^\dagger J)\dot{\mathbf{q}}_0$.
+  - For redundant manipulators ($N > 6$ or planar $N > 2$), project secondary objectives (joint-limit avoidance and manipulability maximization $\sqrt{\det(J J^T)}$ into the Jacobian null space $(I - J^\dagger J)\dot{\mathbf{q}}_0$.
 
 ## Milestone 2: Rigid-Body Inverse Dynamics & Closed-Loop Control (`v0.2.0` — ~8 Hours)
 - **Recursive Newton-Euler (RNE) Inverse Dynamics Solver (`Issue #3`):**
